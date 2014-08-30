@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>scrollindicatorsontop</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //scroll indicators on the very top
+    if (scrollView.showsVerticalScrollIndicator) {
+        NSUInteger subviewsCount = [[scrollView subviews] count];
+        if (subviewsCount &gt; 0) {
+            UIView *scrollBar = [[scrollView subviews] objectAtIndex:subviewsCount - 1 - 1];
+            [scrollView bringSubviewToFront:scrollBar];
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1EA336F-F141-482B-815E-45BF413F16B3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Keeps vertical scroll indicators always on top as you scroll</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Scroll indicators always on top</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

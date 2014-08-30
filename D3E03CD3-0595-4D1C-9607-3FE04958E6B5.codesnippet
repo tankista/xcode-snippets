@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>modeldelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark
+#pragma mark SYModelDelegate Methods
+
+- (void)model:(id&lt;SYModel&gt;)model didStartLoad:(SYModelLoadType)loadType
+{
+    [super model:model didStartLoad:loadType];
+}
+
+- (void)model:(id&lt;SYModel&gt;)model didFinishLoad:(SYModelLoadType)loadType objects:(NSArray*)objects
+{
+    [super model:model didFinishLoad:loadType objects:objects];
+}
+
+- (void)model:(id&lt;SYModel&gt;)model didFailLoad:(SYModelLoadType)loadType withError:(NSError*)error
+{
+    [super model:model didFailLoad:loadType withError:error];
+}
+
+- (void)model:(id&lt;SYModel&gt;)model didCancelLoad:(SYModelLoadType)loadType
+{
+    [super model:model didCancelLoad:loadType];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D3E03CD3-0595-4D1C-9607-3FE04958E6B5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SYModelDelegate Methods</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -10,24 +10,24 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark
-#pragma mark SYModelDelegate Methods
+#pragma mark DTModelDelegate Methods
 
-- (void)model:(id&lt;SYModel&gt;)model didStartLoad:(SYModelLoadType)loadType
+- (void)model:(id&lt;DTModel&gt;)model didStartLoad:(DTModelLoadType)loadType
 {
     [super model:model didStartLoad:loadType];
 }
 
-- (void)model:(id&lt;SYModel&gt;)model didFinishLoad:(SYModelLoadType)loadType objects:(NSArray*)objects
+- (void)model:(id&lt;DTModel&gt;)model didFinishLoad:(DTModelLoadType)loadType
 {
-    [super model:model didFinishLoad:loadType objects:objects];
+    [super model:model didFinishLoad:loadType];
 }
 
-- (void)model:(id&lt;SYModel&gt;)model didFailLoad:(SYModelLoadType)loadType withError:(NSError*)error
+- (void)model:(id&lt;DTModel&gt;)model didFailLoad:(DTModelLoadType)loadType withError:(NSError*)error
 {
     [super model:model didFailLoad:loadType withError:error];
 }
 
-- (void)model:(id&lt;SYModel&gt;)model didCancelLoad:(SYModelLoadType)loadType
+- (void)model:(id&lt;DTModel&gt;)model didCancelLoad:(DTModelLoadType)loadType
 {
     [super model:model didCancelLoad:loadType];
 }</string>
@@ -36,7 +36,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>SYModelDelegate Methods</string>
+	<string>DTModelDelegate Methods</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
